@@ -1,7 +1,6 @@
 function estimateTransactionFee(amountToSend){
   const percentageFee= amountToSend * 0.015;
-  const fee= 
-  Math.min(Math.max(percentageFee, 10), 70);
+  const fee= Math.min(Math.max(percentageFee, 10), 70);
   const totaldebited= amountToSend + fee;
 
 

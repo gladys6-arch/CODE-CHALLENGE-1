@@ -1,16 +1,16 @@
-function calculateChaiIngredients(numberofcups){
+function calculateChaiIngredients(numberofCups){
   // The ingredients amount per a cup for the chai
-  const waterpercup= 200; // in ml
-  const milkpercup= 50; // in ml
-  const teaLeavespercup= 1; // in teaspoons
-  const sugarpercup= 2; // in teaspoons
+  const waterPerCup= 200; // in ml
+  const milkPerCup= 50; // in ml
+  const teaLeavesPerCup= 1; // in teaspoons
+  const sugarPerCup= 2; // in teaspoons
 
 
   // The total amounts of the ingredients
-  const totalWater= waterpercup * numberofcups;
-  const totalMilk= milkpercup * numberofcups;
-  const totalTeaLeaves=teaLeavespercup * numberofcups;
-  const totalSugar=sugarpercup * numberofcups;
+  const totalWater= waterPerCup * numberofCups;
+  const totalMilk= milkPerCup * numberofCups;
+  const totalTeaLeaves=teaLeavesPerCup * numberofCups;
+  const totalSugar=sugarPerCup * numberofCups;
 
 
 
@@ -26,8 +26,8 @@ function calculateChaiIngredients(numberofcups){
   // Prompt the user 
   const input= prompt("Karibu! How many cups of Chai Bora would you like to make?");
   const numberofCups= parseInt(input,8);
-  if(!isNaN(numberofcups) && numberofcups > 0){
-    calculateChaiIngredients(numberofcups);
+  if(!isNaN(numberofCups) && numberofCups > 0){
+    calculateChaiIngredients(numberofCups);
   } else{
     console.log("Tafadhali, enter a valid number of cups.")
   }
