@@ -15,15 +15,16 @@ console.log('Mpaka Uko: KES ${perkmcharge}');
 console.log('Total: KES ${totalFare}');
 console.log('\n Panda Pikipiki!');
 
-// Prompt the user and run the function
-const userinput= prompt("Unafika wapi Mkubwa? Kilometer ngapi?:");
-const distance= Number(userinput);
+}
 
-// validate input
-if(!isNaN(distance) && distance >= 0){
-  calculateBodaFare(distance);
-}  else{
-  console.log("Tafadhali ingiza nambari sahihi ya kilometer.");
-  
+// prompt the user
+const useinput=window.prompt("Unafika wapi Mkubwa? Kilometer ngapi?");
+const distanceInKm= parseInt(useinput);
+
+if(distanceInKm > 0){
+  calculateBodaFare(distanceInKm);
+} else{
+  console.log('Please enter a valid distance')
 }
-}
+
+

@@ -23,12 +23,19 @@ function calculateChaiIngredients(numberofCups){
   console.log("Enjoy your Chai Bora!");
 
 
-  // Prompt the user 
-  const input= prompt("Karibu! How many cups of Chai Bora would you like to make?");
-  const numberofCups= parseInt(input,8);
-  if(!isNaN(numberofCups) && numberofCups > 0){
-    calculateChaiIngredients(numberofCups);
-  } else{
-    console.log("Tafadhali, enter a valid number of cups.")
-  }
+  
 }
+
+
+// Prompt the user 
+  
+
+   let userinput= window.prompt("Karibu! How many cups of Chai Bora would you like to make?");
+   const numberofCups= parseInt(userinput);
+
+
+   if(numberofCups> 0){
+    calculateChaiIngredients(numberofCups);
+   } else{
+    console.log('Enter valid number of cups');
+   }
